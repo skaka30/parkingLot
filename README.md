@@ -11,6 +11,45 @@ System using Node with Express Server, MongoDB
 
 - [node & npm](https://nodejs.org/en/)
 
+## Project  structure
+```sh
+.
+├── server.js
+├── package.json
+├── api
+|   ├── routes.js
+│   ├── common
+|         └── errorModule.js
+│   └── parking
+|         └── v1
+|             └── index.js
+|             └── parking.js
+|   └── users
+|         └── v1
+|             └── index.js
+|             └── users.js
+├── models
+│   ├── BookModel.js
+│   └── UserModel.js
+├── components
+|   └── parking
+|          └── index.js
+|          └── addParkingSlot.js
+|          └── bookParkingSlot.js
+|          └── checkBookingSlot.js
+|          └── checkParkingSlot.js
+|          └── getOccupiedSlot.js
+|          └── getParkingSlotList.js
+│   ├── users
+|          └── index.js
+|          └── getUsersDetails.js
+|          └── getTotalUserRegister.js
+|          └── addUser.js
+├── models
+│   ├── User.js
+│   ├── ParkingSlot.js
+│   ├── BookParkingSlot.js
+```
 ## Installation
 
 - `git clone https://github.com/skaka30/parkingLot.git`
